@@ -128,3 +128,34 @@ nav ul {
 .main-content--card h3 {
   font-size: 1.66rem;
 }
+
+footer {
+  background-color: #3B4050;
+  margin: 0;
+  padding: 3em 0;
+}
+
+.footer-header {
+  color: #fff;
+  text-align: center;
+}
+
+footer p {
+  color: #fff;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-nav__link {
+  margin-bottom: 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .88rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
