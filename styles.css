@@ -57,13 +57,14 @@ p {
 
 nav {
   background-color: #2E323F;
-  padding: 1em 0;
+  padding: .25em 0;
 }
 
 nav ul {
   list-style-type: none;
   text-align: center;
   padding: 0;
+  margin: 0;
   text-transform: uppercase;
 }
 
@@ -120,13 +121,14 @@ nav ul {
 .main-content--card {
   background-color: #3B4050;
   text-align: center;
-  padding: 1.25em;
+  padding: 1em;
   margin-bottom: 1em;
   color: #fff;
 }
 
 .main-content--card h3 {
   font-size: 1.66rem;
+  margin: 0;
 }
 
 footer {
@@ -158,4 +160,37 @@ footer ul {
 footer a {
   text-decoration: none;
   color: #6F737F;
+}
+
+@media (min-width: 700px) {
+  .nav-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .25em 0;
+  }
+
+  .nav__item {
+    margin-bottom: 0;
+  }
+  
+  .row {
+    display: flex;
+    gap: 1.25em;
+  }
+
+  .col {
+    justify-content: center;
+    align-self: center;
+  }
+
+  .footer-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 4em;
+  }
+
+  .footer-col {
+    max-width: 40%;
+  }
 }
