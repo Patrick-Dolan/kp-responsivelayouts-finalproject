@@ -16,5 +16,16 @@ body {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
+  background-color: aqua;
+}
+
+.logo {
+  height: 30px;
+}
+
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
