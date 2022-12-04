@@ -36,7 +36,7 @@ p {
 }
 
 .container {
-  width: 85%;
+  width: 80%;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -78,7 +78,9 @@ nav ul {
 }
 
 .nav__item:hover,
-.nav__item  :focus {
+.nav__item:focus,
+.btn:hover,
+.btn:focus {
   opacity: .75;
 }
 
@@ -168,13 +170,29 @@ footer a {
     align-items: center;
     justify-content: space-between;
     padding: .25em 0;
+    gap: 1em;
   }
 
   .nav__item {
     margin-bottom: 0;
   }
+
+  .hero-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-col {
+    max-width: 45%;
+  }
+
+  .three-col-section-row {
+    display: flex;
+    gap: 2em;
+  }
   
-  .row {
+  .card-row {
     display: flex;
     gap: 1.25em;
   }
@@ -192,5 +210,29 @@ footer a {
 
   .footer-col {
     max-width: 40%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .three-col-section-row {
+    display: flex;
+    gap: 4em;
+  }
+
+  .three-col-section-col {
+    max-width: 50%;
+  }
+
+  .main-row {
+    display: flex;
+    gap: 3em;
+  }
+
+  .main-col {
+    justify-self: start;
+  }
+
+  .card-row {
+    display: block;
   }
 }
